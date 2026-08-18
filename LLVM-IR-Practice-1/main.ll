@@ -1,3 +1,6 @@
+; https://llvm.org/docs/LangRef.html
+; https://github.com/simon-or-something/Collect-Avoid1.rkt
+
 declare void @InitWindow(i32, i32, ptr) nounwind
 declare i1 @WindowShouldClose() nounwind
 declare void @BeginDrawing() nounwind
