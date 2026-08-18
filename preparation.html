@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-08-18 Tue 13:19 -->
+<!-- 2026-08-18 Tue 13:45 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Written Notes</title>
@@ -233,86 +233,86 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5e9ecd5">1. General Notes</a>
+<li><a href="#orgcedfbaf">1. General Notes</a>
 <ul>
-<li><a href="#org7501c3d">1.1. What is Clang</a></li>
-<li><a href="#org7f760e0">1.2. How is Clang implemented</a>
+<li><a href="#orgd397e2e">1.1. What is Clang</a></li>
+<li><a href="#org7622818">1.2. How is Clang implemented</a>
 <ul>
-<li><a href="#org487f7f5">1.2.1. Collection of Libraries:</a></li>
-<li><a href="#org1399a31">1.2.2. Intricacies:</a></li>
-<li><a href="#orga41beea">1.2.3. Compromises / Trade-offs:</a></li>
+<li><a href="#org25b382c">1.2.1. Collection of Libraries:</a></li>
+<li><a href="#org3df9ec9">1.2.2. Intricacies:</a></li>
+<li><a href="#orge9e1972">1.2.3. Compromises / Trade-offs:</a></li>
 </ul>
 </li>
-<li><a href="#orga881876">1.3. What does clang provide?</a></li>
-<li><a href="#org23145cf">1.4. Pipeline</a>
+<li><a href="#org502cc23">1.3. What does clang provide?</a></li>
+<li><a href="#org61106c7">1.4. Pipeline</a>
 <ul>
-<li><a href="#org690823a">1.4.1. Driver:</a></li>
-<li><a href="#orgc5e7ee9">1.4.2. Lexer:</a></li>
-<li><a href="#orge170a50">1.4.3. Parsing + Sema:</a></li>
-<li><a href="#org71c4c77">1.4.4. CodeGen:</a></li>
-<li><a href="#org8e1736d">1.4.5. LLVM IR</a></li>
-<li><a href="#org540e838">1.4.6. LLVM Middle End:</a></li>
-<li><a href="#orgb6cd958">1.4.7. LLVM Backend:</a></li>
-<li><a href="#org0da686b">1.4.8. Assembly + Linking:</a></li>
-<li><a href="#org2af6f00">1.4.9. Rough Implementation:</a></li>
+<li><a href="#org6bb9dbf">1.4.1. Driver:</a></li>
+<li><a href="#orgd9d5e16">1.4.2. Lexer:</a></li>
+<li><a href="#org93dc1fe">1.4.3. Parsing + Sema:</a></li>
+<li><a href="#orge723175">1.4.4. CodeGen:</a></li>
+<li><a href="#org8eac5d6">1.4.5. LLVM IR</a></li>
+<li><a href="#org994cda4">1.4.6. LLVM Middle End:</a></li>
+<li><a href="#org24dc2d6">1.4.7. LLVM Backend:</a></li>
+<li><a href="#orgaa5fe68">1.4.8. Assembly + Linking:</a></li>
+<li><a href="#org219a336">1.4.9. Rough Implementation:</a></li>
 </ul>
 </li>
-<li><a href="#org6572b83">1.5. Makefile Implementation</a></li>
+<li><a href="#orga3830a5">1.5. Makefile Implementation</a></li>
 </ul>
 </li>
-<li><a href="#orgc29aec3">2. Exercises</a>
+<li><a href="#org29d4709">2. Exercises</a>
 <ul>
-<li><a href="#org8ba86bf">2.1. If Else</a>
+<li><a href="#orgd2697a7">2.1. If Else</a>
 <ul>
-<li><a href="#org6feb30d">2.1.1. Implementation rationale:</a></li>
-<li><a href="#org3aad61d">2.1.2. Score:</a></li>
+<li><a href="#orgc339877">2.1.1. Implementation rationale:</a></li>
+<li><a href="#orgff4c87e">2.1.2. Score:</a></li>
 </ul>
 </li>
-<li><a href="#org2d77ac9">2.2. CoTo Analyser</a>
+<li><a href="#org1f92f16">2.2. CoTo Analyser</a>
 <ul>
-<li><a href="#org31f3f12">2.2.1. Implementation rationale:</a></li>
-<li><a href="#orge8af25c">2.2.2. Side Entry Notes:</a></li>
-<li><a href="#org05ff31c">2.2.3. Score:</a></li>
+<li><a href="#org07eac44">2.2.1. Implementation rationale:</a></li>
+<li><a href="#orgbe5bd04">2.2.2. Side Entry Notes:</a></li>
+<li><a href="#org5589a16">2.2.3. Score:</a></li>
 </ul>
 </li>
-<li><a href="#org42dc344">2.3. CoTo S2S Transformation</a>
+<li><a href="#org7ab7dcd">2.3. CoTo S2S Transformation</a>
 <ul>
-<li><a href="#orgcdbdb5f">2.3.1. Implementation rationale:</a></li>
-<li><a href="#orgeed39a0">2.3.2. Score:</a></li>
+<li><a href="#orgeba89e5">2.3.1. Implementation rationale:</a></li>
+<li><a href="#orgabd3fc3">2.3.2. Score:</a></li>
 </ul>
 </li>
-<li><a href="#org4fba3ef">2.4. Pointer Checker Pass</a>
+<li><a href="#orgc79e192">2.4. Pointer Checker Pass</a>
 <ul>
-<li><a href="#orgba6147e">2.4.1. Implementation Rationale</a></li>
-<li><a href="#org5081596">2.4.2. Score:</a></li>
+<li><a href="#orgba8801a">2.4.1. Implementation Rationale</a></li>
+<li><a href="#org040dc9e">2.4.2. Score:</a></li>
 </ul>
 </li>
-<li><a href="#orgfbbeb74">2.5. Memory Instrumentation</a>
+<li><a href="#orgd3b6250">2.5. Memory Instrumentation</a>
 <ul>
-<li><a href="#orgc643af4">2.5.1. Implementation Rationale</a></li>
-<li><a href="#org22f1925">2.5.2. Score:</a></li>
+<li><a href="#org583a49d">2.5.1. Implementation Rationale</a></li>
+<li><a href="#org3dc451b">2.5.2. Score:</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgd5570f2">3. Sources:</a>
+<li><a href="#orgcae430a">3. Sources:</a>
 <ul>
-<li><a href="#orgb4750bd">3.1. What is Clang?</a></li>
-<li><a href="#org30cb908">3.2. How is Clang implemented</a></li>
-<li><a href="#orgddf7dc7">3.3. What does clang provide?</a></li>
-<li><a href="#orgbe79eff">3.4. Pipeline</a></li>
+<li><a href="#org4889025">3.1. What is Clang?</a></li>
+<li><a href="#orgbc71e93">3.2. How is Clang implemented</a></li>
+<li><a href="#orgf9b46fd">3.3. What does clang provide?</a></li>
+<li><a href="#orgcd37aa0">3.4. Pipeline</a></li>
 </ul>
 </li>
-<li><a href="#orgd8df8b1">4. Thank You for your time</a></li>
+<li><a href="#orga999805">4. Thank You for your time</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5e9ecd5" class="outline-2">
-<h2 id="org5e9ecd5"><span class="section-number-2">1.</span> General Notes</h2>
+<div id="outline-container-orgcedfbaf" class="outline-2">
+<h2 id="orgcedfbaf"><span class="section-number-2">1.</span> General Notes</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org7501c3d" class="outline-3">
-<h3 id="org7501c3d"><span class="section-number-3">1.1.</span> What is Clang</h3>
+<div id="outline-container-orgd397e2e" class="outline-3">
+<h3 id="orgd397e2e"><span class="section-number-3">1.1.</span> What is Clang</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Clang: 2 things \(\to\) compiler, and frontend <br />
@@ -334,18 +334,18 @@ cfe: <br />
 <li>AST \(\to\) LLVM IR lowering</li>
 </ul>
 
-<div id="org45a0e03" class="figure">
+<div id="org570455a" class="figure">
 <p><img src="clang_tc.png" alt="clang_tc.png" />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org7f760e0" class="outline-3">
-<h3 id="org7f760e0"><span class="section-number-3">1.2.</span> How is Clang implemented</h3>
+<div id="outline-container-org7622818" class="outline-3">
+<h3 id="org7622818"><span class="section-number-3">1.2.</span> How is Clang implemented</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-org487f7f5" class="outline-4">
-<h4 id="org487f7f5"><span class="section-number-4">1.2.1.</span> Collection of Libraries:</h4>
+<div id="outline-container-org25b382c" class="outline-4">
+<h4 id="org25b382c"><span class="section-number-4">1.2.1.</span> Collection of Libraries:</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <ul class="org-ul">
 <li><code>libbasic</code>: diagnostics, source locations, file caching</li>
@@ -373,8 +373,8 @@ this allows simple composition of stuff, for example
 </ul>
 </div>
 </div>
-<div id="outline-container-org1399a31" class="outline-4">
-<h4 id="org1399a31"><span class="section-number-4">1.2.2.</span> Intricacies:</h4>
+<div id="outline-container-org3df9ec9" class="outline-4">
+<h4 id="org3df9ec9"><span class="section-number-4">1.2.2.</span> Intricacies:</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <ul class="org-ul">
 <li>hand written recursive-descent parser</li>
@@ -393,8 +393,8 @@ others are purely semantic (<code>ImplicitCastExpr</code>), but most are a mix o
 </ul>
 </div>
 </div>
-<div id="outline-container-orga41beea" class="outline-4">
-<h4 id="orga41beea"><span class="section-number-4">1.2.3.</span> Compromises / Trade-offs:</h4>
+<div id="outline-container-orge9e1972" class="outline-4">
+<h4 id="orge9e1972"><span class="section-number-4">1.2.3.</span> Compromises / Trade-offs:</h4>
 <div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
 <li>different clients = different frontends
@@ -503,8 +503,8 @@ optimisation 2:
 </div>
 </div>
 </div>
-<div id="outline-container-orga881876" class="outline-3">
-<h3 id="orga881876"><span class="section-number-3">1.3.</span> What does clang provide?</h3>
+<div id="outline-container-org502cc23" class="outline-3">
+<h3 id="org502cc23"><span class="section-number-3">1.3.</span> What does clang provide?</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 LibClang:
@@ -676,8 +676,8 @@ if i'm not mistaken, those are actually <code>Job</code>'s which are polled in t
 </ul>
 </div>
 </div>
-<div id="outline-container-org23145cf" class="outline-3">
-<h3 id="org23145cf"><span class="section-number-3">1.4.</span> Pipeline</h3>
+<div id="outline-container-org61106c7" class="outline-3">
+<h3 id="org61106c7"><span class="section-number-3">1.4.</span> Pipeline</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 the file dynamic is as follows:
@@ -687,8 +687,8 @@ the file dynamic is as follows:
 <li><code>clang/lib/...</code> contains the source for the libraries as discussed in Collection of Libraries</li>
 </ul>
 </div>
-<div id="outline-container-org690823a" class="outline-4">
-<h4 id="org690823a"><span class="section-number-4">1.4.1.</span> Driver:</h4>
+<div id="outline-container-org6bb9dbf" class="outline-4">
+<h4 id="org6bb9dbf"><span class="section-number-4">1.4.1.</span> Driver:</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <ul class="org-ul">
 <li><a href="https://github.com/llvm/llvm-project/blob/main/clang/lib/Driver">https://github.com/llvm/llvm-project/blob/main/clang/lib/Driver</a></li>
@@ -720,8 +720,8 @@ the file dynamic is as follows:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc5e7ee9" class="outline-4">
-<h4 id="orgc5e7ee9"><span class="section-number-4">1.4.2.</span> Lexer:</h4>
+<div id="outline-container-orgd9d5e16" class="outline-4">
+<h4 id="orgd9d5e16"><span class="section-number-4">1.4.2.</span> Lexer:</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <ul class="org-ul">
 <li><a href="https://github.com/llvm/llvm-project/blob/main/clang/lib/Lex">https://github.com/llvm/llvm-project/blob/main/clang/lib/Lex</a></li>
@@ -770,8 +770,8 @@ the file dynamic is as follows:
 </ul>
 </div>
 </div>
-<div id="outline-container-orge170a50" class="outline-4">
-<h4 id="orge170a50"><span class="section-number-4">1.4.3.</span> Parsing + Sema:</h4>
+<div id="outline-container-org93dc1fe" class="outline-4">
+<h4 id="org93dc1fe"><span class="section-number-4">1.4.3.</span> Parsing + Sema:</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <ul class="org-ul">
 <li><a href="https://github.com/llvm/llvm-project/blob/main/clang/lib/Parse">https://github.com/llvm/llvm-project/blob/main/clang/lib/Parse</a></li>
@@ -907,8 +907,8 @@ something something <code>ImplicitCastExpr</code>
 </ul>
 </div>
 </div>
-<div id="outline-container-org71c4c77" class="outline-4">
-<h4 id="org71c4c77"><span class="section-number-4">1.4.4.</span> CodeGen:</h4>
+<div id="outline-container-orge723175" class="outline-4">
+<h4 id="orge723175"><span class="section-number-4">1.4.4.</span> CodeGen:</h4>
 <div class="outline-text-4" id="text-1-4-4">
 <ul class="org-ul">
 <li><a href="https://github.com/llvm/llvm-project/blob/main/clang/lib/CodeGen">https://github.com/llvm/llvm-project/blob/main/clang/lib/CodeGen</a></li>
@@ -1064,8 +1064,8 @@ the actual moment of lowering. <code>ScalarExprEmitter::EmitAdd</code>, i.e., wh
 </ul>
 </div>
 </div>
-<div id="outline-container-org8e1736d" class="outline-4">
-<h4 id="org8e1736d"><span class="section-number-4">1.4.5.</span> LLVM IR</h4>
+<div id="outline-container-org8eac5d6" class="outline-4">
+<h4 id="org8eac5d6"><span class="section-number-4">1.4.5.</span> LLVM IR</h4>
 <div class="outline-text-4" id="text-1-4-5">
 <p>
 (this is where i explain LLVM IR and SSA as one block to illustrate the structure of either)
@@ -1307,9 +1307,9 @@ would point to the same registers during register allocation
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="orgcfb901d"></a>Instruction Reference:<br />
+<li><a id="org42d5f57"></a>Instruction Reference:<br />
 <ol class="org-ol">
-<li><a id="orgc358446"></a>Terminator Instructions:<br />
+<li><a id="org311a5f1"></a>Terminator Instructions:<br />
 <div class="outline-text-6" id="text-1-4-5-1-1">
 <p>
 every block ends with one of these (relatively complete):
@@ -1398,7 +1398,7 @@ the block ends there (unwinding is exception stuff where you say "yo does this h
 </ul>
 </div>
 </li>
-<li><a id="org59495c5"></a>Aggregate Instructions:<br />
+<li><a id="org29f8030"></a>Aggregate Instructions:<br />
 <div class="outline-text-6" id="text-1-4-5-1-2">
 <p>
 struct / array (aggregates) stuff:
@@ -1419,7 +1419,7 @@ no runtime indices, because the result type has to be known statically</li>
 </ul>
 </div>
 </li>
-<li><a id="org2555120"></a>Memory Access and Addressing Operations<br />
+<li><a id="org8f55bda"></a>Memory Access and Addressing Operations<br />
 <div class="outline-text-6" id="text-1-4-5-1-3">
 <ul class="org-ul">
 <li><code>alloca</code>: stack allocation
@@ -1570,8 +1570,8 @@ it "executes" atomically with the block entry, so a group of \(\phi\) all read t
 </li>
 </ol>
 </div>
-<div id="outline-container-org540e838" class="outline-4">
-<h4 id="org540e838"><span class="section-number-4">1.4.6.</span> LLVM Middle End:</h4>
+<div id="outline-container-org994cda4" class="outline-4">
+<h4 id="org994cda4"><span class="section-number-4">1.4.6.</span> LLVM Middle End:</h4>
 <div class="outline-text-4" id="text-1-4-6">
 <ul class="org-ul">
 <li>invoked like so:
@@ -1650,8 +1650,8 @@ immediately gets "pattern matched" to death:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb6cd958" class="outline-4">
-<h4 id="orgb6cd958"><span class="section-number-4">1.4.7.</span> LLVM Backend:</h4>
+<div id="outline-container-org24dc2d6" class="outline-4">
+<h4 id="org24dc2d6"><span class="section-number-4">1.4.7.</span> LLVM Backend:</h4>
 <div class="outline-text-4" id="text-1-4-7">
 <ul class="org-ul">
 <li>invoked like so: <code>llc %.bc -o %.s</code> (or <code>clang -S</code>, note: this skips over the middle end)
@@ -1711,8 +1711,8 @@ one way that helped me see the relation of stack frames when i was a small compi
 </ul>
 </div>
 </div>
-<div id="outline-container-org0da686b" class="outline-4">
-<h4 id="org0da686b"><span class="section-number-4">1.4.8.</span> Assembly + Linking:</h4>
+<div id="outline-container-orgaa5fe68" class="outline-4">
+<h4 id="orgaa5fe68"><span class="section-number-4">1.4.8.</span> Assembly + Linking:</h4>
 <div class="outline-text-4" id="text-1-4-8">
 <ul class="org-ul">
 <li>assembly: invoked like so: <code>llvm-mc -filetype=obj %.s -o %.o</code> (or <code>clang -c %.s -o %.o</code>)</li>
@@ -1754,8 +1754,8 @@ runs AGAIN inside the linker across the whole program. the pipeline eats itself<
 </ul>
 </div>
 </div>
-<div id="outline-container-org2af6f00" class="outline-4">
-<h4 id="org2af6f00"><span class="section-number-4">1.4.9.</span> Rough Implementation:</h4>
+<div id="outline-container-org219a336" class="outline-4">
+<h4 id="org219a336"><span class="section-number-4">1.4.9.</span> Rough Implementation:</h4>
 <div class="outline-text-4" id="text-1-4-9">
 <p>
 this is a brief summary of all the notes above:
@@ -1864,8 +1864,8 @@ it calls to
 </div>
 </div>
 </div>
-<div id="outline-container-org6572b83" class="outline-3">
-<h3 id="org6572b83"><span class="section-number-3">1.5.</span> Makefile Implementation</h3>
+<div id="outline-container-orga3830a5" class="outline-3">
+<h3 id="orga3830a5"><span class="section-number-3">1.5.</span> Makefile Implementation</h3>
 <div class="outline-text-3" id="text-1-5">
 <div class="org-src-container">
 <pre class="src src-makefile"><span style="color: #7c6f64;"># </span><span style="color: #7c6f64;">clang++ -stdlib=libc++: -&gt; -lc++ -lc++abi -lunwind -lm -lc
@@ -1930,19 +1930,19 @@ it calls to
 </div>
 </div>
 </div>
-<div id="outline-container-orgc29aec3" class="outline-2">
-<h2 id="orgc29aec3"><span class="section-number-2">2.</span> Exercises</h2>
+<div id="outline-container-org29d4709" class="outline-2">
+<h2 id="org29d4709"><span class="section-number-2">2.</span> Exercises</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 "Implementation Rationale" is easily greppable
 </p>
 </div>
-<div id="outline-container-org8ba86bf" class="outline-3">
-<h3 id="org8ba86bf"><span class="section-number-3">2.1.</span> If Else</h3>
+<div id="outline-container-orgd2697a7" class="outline-3">
+<h3 id="orgd2697a7"><span class="section-number-3">2.1.</span> If Else</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org6feb30d" class="outline-4">
-<h4 id="org6feb30d"><span class="section-number-4">2.1.1.</span> Implementation rationale:</h4>
+<div id="outline-container-orgc339877" class="outline-4">
+<h4 id="orgc339877"><span class="section-number-4">2.1.1.</span> Implementation rationale:</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>The whole exercise is ONE matcher expression, so the design decision is: encode "no unconditional else" entirely in the matcher DSL instead of matching every if and filtering in the callback
@@ -1968,8 +1968,8 @@ this file drags in the whole <code>DiagnosticOptions</code> refcounting circus</
 </ul>
 </div>
 </div>
-<div id="outline-container-org3aad61d" class="outline-4">
-<h4 id="org3aad61d"><span class="section-number-4">2.1.2.</span> Score:</h4>
+<div id="outline-container-orgff4c87e" class="outline-4">
+<h4 id="orgff4c87e"><span class="section-number-4">2.1.2.</span> Score:</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <div class="org-src-container">
 <pre class="src src-html">&lt;<span style="color: #fb4933;">!doctype</span> html&gt;&lt;<span style="color: #fabd2f;">html</span>&gt;&lt;<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">name</span>=<span style="color: #b8bb26;">'viewport'</span> <span style="color: #83a598;">content</span>=<span style="color: #b8bb26;">'width=device-width,initial-scale=1'</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">charset</span>=<span style="color: #b8bb26;">'UTF-8'</span>&gt;&lt;<span style="color: #fabd2f;">link</span> <span style="color: #83a598;">rel</span>=<span style="color: #b8bb26;">'stylesheet'</span> <span style="color: #83a598;">type</span>=<span style="color: #b8bb26;">'text/css'</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'style.css'</span>&gt;&lt;/<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">body</span>&gt;&lt;<span style="color: #fabd2f;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Coverage Report</span>&lt;/<span style="color: #fabd2f;">h2</span>&gt;&lt;<span style="color: #fabd2f;">h4</span>&gt;<span style="text-decoration: underline;">Created: 2026-07-20 13:25</span>&lt;/<span style="color: #fabd2f;">h4</span>&gt;&lt;<span style="color: #fabd2f;">p</span>&gt;Click &lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'http://clang.llvm.org/docs/SourceBasedCodeCoverage.html#interpreting-reports'</span>&gt;here&lt;/<span style="color: #fabd2f;">a</span>&gt; for information about interpreting this report.&lt;/<span style="color: #fabd2f;">p</span>&gt;&lt;<span style="color: #fabd2f;">div</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'centered'</span>&gt;&lt;<span style="color: #fabd2f;">table</span>&gt;&lt;<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Filename&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Function Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Line Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Region Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Branch Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;&lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'coverage/home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt3-clang/exercise1/src/main.cpp.html'</span>&gt;home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt3-clang/exercise1/src/main.cpp&lt;/<span style="color: #fabd2f;">a</span>&gt;&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (2/2)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (24/24)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (5/5)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (2/2)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row-bold'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;Totals&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (2/2)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (24/24)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (5/5)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (2/2)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;/<span style="color: #fabd2f;">table</span>&gt;&lt;/<span style="color: #fabd2f;">div</span>&gt;&lt;<span style="color: #fabd2f;">h5</span>&gt;<span style="text-decoration: underline;">Generated by llvm-cov -- llvm version 18.1.8</span>&lt;/<span style="color: #fabd2f;">h5</span>&gt;&lt;/<span style="color: #fabd2f;">body</span>&gt;&lt;/<span style="color: #fabd2f;">html</span>&gt;
@@ -1978,12 +1978,12 @@ this file drags in the whole <code>DiagnosticOptions</code> refcounting circus</
 </div>
 </div>
 </div>
-<div id="outline-container-org2d77ac9" class="outline-3">
-<h3 id="org2d77ac9"><span class="section-number-3">2.2.</span> CoTo Analyser</h3>
+<div id="outline-container-org1f92f16" class="outline-3">
+<h3 id="org1f92f16"><span class="section-number-3">2.2.</span> CoTo Analyser</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org31f3f12" class="outline-4">
-<h4 id="org31f3f12"><span class="section-number-4">2.2.1.</span> Implementation rationale:</h4>
+<div id="outline-container-org07eac44" class="outline-4">
+<h4 id="org07eac44"><span class="section-number-4">2.2.1.</span> Implementation rationale:</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <ul class="org-ul">
 <li>One binary, five checks, selected via <code>-t</code> (mandated by the "checks are enabled selectively using command line arguments" slide, parser: <a href="https://llvm.org/docs/CommandLine.html">https://llvm.org/docs/CommandLine.html</a>)
@@ -2053,8 +2053,8 @@ are handled by the CFG for free (counting <code>if</code> / <code>while</code> /
 </ul>
 </div>
 </div>
-<div id="outline-container-orge8af25c" class="outline-4">
-<h4 id="orge8af25c"><span class="section-number-4">2.2.2.</span> Side Entry Notes:</h4>
+<div id="outline-container-orgbe5bd04" class="outline-4">
+<h4 id="orgbe5bd04"><span class="section-number-4">2.2.2.</span> Side Entry Notes:</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 <code>LabelStmt</code> carries a <code>SideEntry</code> <code>bool</code>
@@ -2073,8 +2073,8 @@ On a plain Linux compile, neither <code>MSVC-compat</code> nor <code>async-EH</c
 </p>
 </div>
 </div>
-<div id="outline-container-org05ff31c" class="outline-4">
-<h4 id="org05ff31c"><span class="section-number-4">2.2.3.</span> Score:</h4>
+<div id="outline-container-org5589a16" class="outline-4">
+<h4 id="org5589a16"><span class="section-number-4">2.2.3.</span> Score:</h4>
 <div class="outline-text-4" id="text-2-2-3">
 <div class="org-src-container">
 <pre class="src src-html">&lt;<span style="color: #fb4933;">!doctype</span> html&gt;&lt;<span style="color: #fabd2f;">html</span>&gt;&lt;<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">name</span>=<span style="color: #b8bb26;">'viewport'</span> <span style="color: #83a598;">content</span>=<span style="color: #b8bb26;">'width=device-width,initial-scale=1'</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">charset</span>=<span style="color: #b8bb26;">'UTF-8'</span>&gt;&lt;<span style="color: #fabd2f;">link</span> <span style="color: #83a598;">rel</span>=<span style="color: #b8bb26;">'stylesheet'</span> <span style="color: #83a598;">type</span>=<span style="color: #b8bb26;">'text/css'</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'style.css'</span>&gt;&lt;/<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">body</span>&gt;&lt;<span style="color: #fabd2f;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Coverage Report</span>&lt;/<span style="color: #fabd2f;">h2</span>&gt;&lt;<span style="color: #fabd2f;">h4</span>&gt;<span style="text-decoration: underline;">Created: 2026-07-20 13:27</span>&lt;/<span style="color: #fabd2f;">h4</span>&gt;&lt;<span style="color: #fabd2f;">p</span>&gt;Click &lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'http://clang.llvm.org/docs/SourceBasedCodeCoverage.html#interpreting-reports'</span>&gt;here&lt;/<span style="color: #fabd2f;">a</span>&gt; for information about interpreting this report.&lt;/<span style="color: #fabd2f;">p</span>&gt;&lt;<span style="color: #fabd2f;">div</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'centered'</span>&gt;&lt;<span style="color: #fabd2f;">table</span>&gt;&lt;<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Filename&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Function Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Line Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Region Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Branch Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;&lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'coverage/home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt3-clang/exercise2/src/main.cpp.html'</span>&gt;home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt3-clang/exercise2/src/main.cpp&lt;/<span style="color: #fabd2f;">a</span>&gt;&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (12/12)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  98.88% (177/179)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  98.39% (122/124)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  94.05% (79/84)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row-bold'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;Totals&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (12/12)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  98.88% (177/179)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  98.39% (122/124)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  94.05% (79/84)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;/<span style="color: #fabd2f;">table</span>&gt;&lt;/<span style="color: #fabd2f;">div</span>&gt;&lt;<span style="color: #fabd2f;">h5</span>&gt;<span style="text-decoration: underline;">Generated by llvm-cov -- llvm version 18.1.8</span>&lt;/<span style="color: #fabd2f;">h5</span>&gt;&lt;/<span style="color: #fabd2f;">body</span>&gt;&lt;/<span style="color: #fabd2f;">html</span>&gt;
@@ -2083,12 +2083,12 @@ On a plain Linux compile, neither <code>MSVC-compat</code> nor <code>async-EH</c
 </div>
 </div>
 </div>
-<div id="outline-container-org42dc344" class="outline-3">
-<h3 id="org42dc344"><span class="section-number-3">2.3.</span> CoTo S2S Transformation</h3>
+<div id="outline-container-org7ab7dcd" class="outline-3">
+<h3 id="org7ab7dcd"><span class="section-number-3">2.3.</span> CoTo S2S Transformation</h3>
 <div class="outline-text-3" id="text-2-3">
 </div>
-<div id="outline-container-orgcdbdb5f" class="outline-4">
-<h4 id="orgcdbdb5f"><span class="section-number-4">2.3.1.</span> Implementation rationale:</h4>
+<div id="outline-container-orgeba89e5" class="outline-4">
+<h4 id="orgeba89e5"><span class="section-number-4">2.3.1.</span> Implementation rationale:</h4>
 <div class="outline-text-4" id="text-2-3-1">
 <ul class="org-ul">
 <li>Overall approach: match EVERY <code>if</code> in the main file with a deliberately dumb matcher, then verify the 5 slide rules imperatively in the callback
@@ -2125,8 +2125,8 @@ Re-running the tool on its own output would catch the next one (fixpoint iterati
 </ul>
 </div>
 </div>
-<div id="outline-container-orgeed39a0" class="outline-4">
-<h4 id="orgeed39a0"><span class="section-number-4">2.3.2.</span> Score:</h4>
+<div id="outline-container-orgabd3fc3" class="outline-4">
+<h4 id="orgabd3fc3"><span class="section-number-4">2.3.2.</span> Score:</h4>
 <div class="outline-text-4" id="text-2-3-2">
 <div class="org-src-container">
 <pre class="src src-html">&lt;<span style="color: #fb4933;">!doctype</span> html&gt;&lt;<span style="color: #fabd2f;">html</span>&gt;&lt;<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">name</span>=<span style="color: #b8bb26;">'viewport'</span> <span style="color: #83a598;">content</span>=<span style="color: #b8bb26;">'width=device-width,initial-scale=1'</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">charset</span>=<span style="color: #b8bb26;">'UTF-8'</span>&gt;&lt;<span style="color: #fabd2f;">link</span> <span style="color: #83a598;">rel</span>=<span style="color: #b8bb26;">'stylesheet'</span> <span style="color: #83a598;">type</span>=<span style="color: #b8bb26;">'text/css'</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'style.css'</span>&gt;&lt;/<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">body</span>&gt;&lt;<span style="color: #fabd2f;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Coverage Report</span>&lt;/<span style="color: #fabd2f;">h2</span>&gt;&lt;<span style="color: #fabd2f;">h4</span>&gt;<span style="text-decoration: underline;">Created: 2026-07-20 13:28</span>&lt;/<span style="color: #fabd2f;">h4</span>&gt;&lt;<span style="color: #fabd2f;">p</span>&gt;Click &lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'http://clang.llvm.org/docs/SourceBasedCodeCoverage.html#interpreting-reports'</span>&gt;here&lt;/<span style="color: #fabd2f;">a</span>&gt; for information about interpreting this report.&lt;/<span style="color: #fabd2f;">p</span>&gt;&lt;<span style="color: #fabd2f;">div</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'centered'</span>&gt;&lt;<span style="color: #fabd2f;">table</span>&gt;&lt;<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Filename&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Function Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Line Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Region Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Branch Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;&lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'coverage/home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt3-clang/exercise3/src/main.cpp.html'</span>&gt;home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt3-clang/exercise3/src/main.cpp&lt;/<span style="color: #fabd2f;">a</span>&gt;&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (12/12)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  95.65% (132/138)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  96.59% (85/88)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  90.62% (58/64)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row-bold'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;Totals&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (12/12)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  95.65% (132/138)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  96.59% (85/88)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  90.62% (58/64)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;/<span style="color: #fabd2f;">table</span>&gt;&lt;/<span style="color: #fabd2f;">div</span>&gt;&lt;<span style="color: #fabd2f;">h5</span>&gt;<span style="text-decoration: underline;">Generated by llvm-cov -- llvm version 18.1.8</span>&lt;/<span style="color: #fabd2f;">h5</span>&gt;&lt;/<span style="color: #fabd2f;">body</span>&gt;&lt;/<span style="color: #fabd2f;">html</span>&gt;
@@ -2135,12 +2135,12 @@ Re-running the tool on its own output would catch the next one (fixpoint iterati
 </div>
 </div>
 </div>
-<div id="outline-container-org4fba3ef" class="outline-3">
-<h3 id="org4fba3ef"><span class="section-number-3">2.4.</span> Pointer Checker Pass</h3>
+<div id="outline-container-orgc79e192" class="outline-3">
+<h3 id="orgc79e192"><span class="section-number-3">2.4.</span> Pointer Checker Pass</h3>
 <div class="outline-text-3" id="text-2-4">
 </div>
-<div id="outline-container-orgba6147e" class="outline-4">
-<h4 id="orgba6147e"><span class="section-number-4">2.4.1.</span> Implementation Rationale</h4>
+<div id="outline-container-orgba8801a" class="outline-4">
+<h4 id="orgba8801a"><span class="section-number-4">2.4.1.</span> Implementation Rationale</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <ul class="org-ul">
 <li>Every GEP whose pointer operand is the result of a <code>load ptr</code> gets guarded
@@ -2174,8 +2174,8 @@ A real implementation would use dominator info + <code>alias</code> analysis, bu
 </ul>
 </div>
 </div>
-<div id="outline-container-org5081596" class="outline-4">
-<h4 id="org5081596"><span class="section-number-4">2.4.2.</span> Score:</h4>
+<div id="outline-container-org040dc9e" class="outline-4">
+<h4 id="org040dc9e"><span class="section-number-4">2.4.2.</span> Score:</h4>
 <div class="outline-text-4" id="text-2-4-2">
 <div class="org-src-container">
 <pre class="src src-html">&lt;<span style="color: #fb4933;">!doctype</span> html&gt;&lt;<span style="color: #fabd2f;">html</span>&gt;&lt;<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">name</span>=<span style="color: #b8bb26;">'viewport'</span> <span style="color: #83a598;">content</span>=<span style="color: #b8bb26;">'width=device-width,initial-scale=1'</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">charset</span>=<span style="color: #b8bb26;">'UTF-8'</span>&gt;&lt;<span style="color: #fabd2f;">link</span> <span style="color: #83a598;">rel</span>=<span style="color: #b8bb26;">'stylesheet'</span> <span style="color: #83a598;">type</span>=<span style="color: #b8bb26;">'text/css'</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'style.css'</span>&gt;&lt;/<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">body</span>&gt;&lt;<span style="color: #fabd2f;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Coverage Report</span>&lt;/<span style="color: #fabd2f;">h2</span>&gt;&lt;<span style="color: #fabd2f;">h4</span>&gt;<span style="text-decoration: underline;">Created: 2026-07-20 14:25</span>&lt;/<span style="color: #fabd2f;">h4</span>&gt;&lt;<span style="color: #fabd2f;">p</span>&gt;Click &lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'http://clang.llvm.org/docs/SourceBasedCodeCoverage.html#interpreting-reports'</span>&gt;here&lt;/<span style="color: #fabd2f;">a</span>&gt; for information about interpreting this report.&lt;/<span style="color: #fabd2f;">p</span>&gt;&lt;<span style="color: #fabd2f;">div</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'centered'</span>&gt;&lt;<span style="color: #fabd2f;">table</span>&gt;&lt;<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Filename&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Function Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Line Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Region Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Branch Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;&lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'coverage/home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt2-llvm/PointerCheck/PointerCheckerPass.h.html'</span>&gt;PointerCheckerPass.h&lt;/<span style="color: #fabd2f;">a</span>&gt;&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (3/3)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (5/5)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (3/3)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-gray'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;- (0/0)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;&lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'coverage/home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt2-llvm/PointerCheck/PointerCheckerPass.cpp.html'</span>&gt;PointerCheckerPass.cpp&lt;/<span style="color: #fabd2f;">a</span>&gt;&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (5/5)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (78/78)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (20/20)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (14/14)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row-bold'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;Totals&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (8/8)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (83/83)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (23/23)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (14/14)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;/<span style="color: #fabd2f;">table</span>&gt;&lt;/<span style="color: #fabd2f;">div</span>&gt;&lt;<span style="color: #fabd2f;">h5</span>&gt;<span style="text-decoration: underline;">Generated by llvm-cov -- llvm version 18.1.8</span>&lt;/<span style="color: #fabd2f;">h5</span>&gt;&lt;/<span style="color: #fabd2f;">body</span>&gt;&lt;/<span style="color: #fabd2f;">html</span>&gt;
@@ -2184,12 +2184,12 @@ A real implementation would use dominator info + <code>alias</code> analysis, bu
 </div>
 </div>
 </div>
-<div id="outline-container-orgfbbeb74" class="outline-3">
-<h3 id="orgfbbeb74"><span class="section-number-3">2.5.</span> Memory Instrumentation</h3>
+<div id="outline-container-orgd3b6250" class="outline-3">
+<h3 id="orgd3b6250"><span class="section-number-3">2.5.</span> Memory Instrumentation</h3>
 <div class="outline-text-3" id="text-2-5">
 </div>
-<div id="outline-container-orgc643af4" class="outline-4">
-<h4 id="orgc643af4"><span class="section-number-4">2.5.1.</span> Implementation Rationale</h4>
+<div id="outline-container-org583a49d" class="outline-4">
+<h4 id="org583a49d"><span class="section-number-4">2.5.1.</span> Implementation Rationale</h4>
 <div class="outline-text-4" id="text-2-5-1">
 <ul class="org-ul">
 <li>Module pass, not function pass. Three reasons:
@@ -2260,8 +2260,8 @@ running the pass from somewhere else moves the file, thats faithful to the spec 
 </ul>
 </div>
 </div>
-<div id="outline-container-org22f1925" class="outline-4">
-<h4 id="org22f1925"><span class="section-number-4">2.5.2.</span> Score:</h4>
+<div id="outline-container-org3dc451b" class="outline-4">
+<h4 id="org3dc451b"><span class="section-number-4">2.5.2.</span> Score:</h4>
 <div class="outline-text-4" id="text-2-5-2">
 <div class="org-src-container">
 <pre class="src src-html">&lt;<span style="color: #fb4933;">!doctype</span> html&gt;&lt;<span style="color: #fabd2f;">html</span>&gt;&lt;<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">name</span>=<span style="color: #b8bb26;">'viewport'</span> <span style="color: #83a598;">content</span>=<span style="color: #b8bb26;">'width=device-width,initial-scale=1'</span>&gt;&lt;<span style="color: #fabd2f;">meta</span> <span style="color: #83a598;">charset</span>=<span style="color: #b8bb26;">'UTF-8'</span>&gt;&lt;<span style="color: #fabd2f;">link</span> <span style="color: #83a598;">rel</span>=<span style="color: #b8bb26;">'stylesheet'</span> <span style="color: #83a598;">type</span>=<span style="color: #b8bb26;">'text/css'</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'style.css'</span>&gt;&lt;/<span style="color: #fabd2f;">head</span>&gt;&lt;<span style="color: #fabd2f;">body</span>&gt;&lt;<span style="color: #fabd2f;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Coverage Report</span>&lt;/<span style="color: #fabd2f;">h2</span>&gt;&lt;<span style="color: #fabd2f;">h4</span>&gt;<span style="text-decoration: underline;">Created: 2026-07-20 14:26</span>&lt;/<span style="color: #fabd2f;">h4</span>&gt;&lt;<span style="color: #fabd2f;">p</span>&gt;Click &lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'http://clang.llvm.org/docs/SourceBasedCodeCoverage.html#interpreting-reports'</span>&gt;here&lt;/<span style="color: #fabd2f;">a</span>&gt; for information about interpreting this report.&lt;/<span style="color: #fabd2f;">p</span>&gt;&lt;<span style="color: #fabd2f;">div</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'centered'</span>&gt;&lt;<span style="color: #fabd2f;">table</span>&gt;&lt;<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Filename&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Function Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Line Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Region Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-bold'</span>&gt;Branch Coverage&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;&lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'coverage/home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt2-llvm/MemoryInstrumentation/MemoryInstrumentorPass.cpp.html'</span>&gt;MemoryInstrumentorPass.cpp&lt;/<span style="color: #fabd2f;">a</span>&gt;&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (8/8)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (197/197)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  98.70% (76/77)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  93.33% (56/60)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;&lt;<span style="color: #fabd2f;">a</span> <span style="color: #83a598;">href</span>=<span style="color: #b8bb26;">'coverage/home/simon-or-something/Documents/Org/uni/compsci/coto/homework/attempt2-llvm/MemoryInstrumentation/MemoryInstrumentorPass.h.html'</span>&gt;MemoryInstrumentorPass.h&lt;/<span style="color: #fabd2f;">a</span>&gt;&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (3/3)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (5/5)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (3/3)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-gray'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;- (0/0)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;<span style="color: #fabd2f;">tr</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'light-row-bold'</span>&gt;&lt;<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;Totals&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (11/11)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-green'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt; 100.00% (202/202)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  98.75% (79/80)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;<span style="color: #fabd2f;">td</span> <span style="color: #83a598;">class</span>=<span style="color: #b8bb26;">'column-entry-yellow'</span>&gt;&lt;<span style="color: #fabd2f;">pre</span>&gt;  93.33% (56/60)&lt;/<span style="color: #fabd2f;">pre</span>&gt;&lt;/<span style="color: #fabd2f;">td</span>&gt;&lt;/<span style="color: #fabd2f;">tr</span>&gt;&lt;/<span style="color: #fabd2f;">table</span>&gt;&lt;/<span style="color: #fabd2f;">div</span>&gt;&lt;<span style="color: #fabd2f;">h5</span>&gt;<span style="text-decoration: underline;">Generated by llvm-cov -- llvm version 18.1.8</span>&lt;/<span style="color: #fabd2f;">h5</span>&gt;&lt;/<span style="color: #fabd2f;">body</span>&gt;&lt;/<span style="color: #fabd2f;">html</span>&gt;
@@ -2271,20 +2271,20 @@ running the pass from somewhere else moves the file, thats faithful to the spec 
 </div>
 </div>
 </div>
-<div id="outline-container-orgd5570f2" class="outline-2">
-<h2 id="orgd5570f2"><span class="section-number-2">3.</span> Sources:</h2>
+<div id="outline-container-orgcae430a" class="outline-2">
+<h2 id="orgcae430a"><span class="section-number-2">3.</span> Sources:</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgb4750bd" class="outline-3">
-<h3 id="orgb4750bd"><span class="section-number-3">3.1.</span> What is Clang?</h3>
+<div id="outline-container-org4889025" class="outline-3">
+<h3 id="org4889025"><span class="section-number-3">3.1.</span> What is Clang?</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li><a href="https://clang.llvm.org/docs/InternalsManual.html">https://clang.llvm.org/docs/InternalsManual.html</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org30cb908" class="outline-3">
-<h3 id="org30cb908"><span class="section-number-3">3.2.</span> How is Clang implemented</h3>
+<div id="outline-container-orgbc71e93" class="outline-3">
+<h3 id="orgbc71e93"><span class="section-number-3">3.2.</span> How is Clang implemented</h3>
 <div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li><a href="https://clang.llvm.org/features.html">https://clang.llvm.org/features.html</a></li>
@@ -2313,8 +2313,8 @@ running the pass from somewhere else moves the file, thats faithful to the spec 
 </ul>
 </div>
 </div>
-<div id="outline-container-orgddf7dc7" class="outline-3">
-<h3 id="orgddf7dc7"><span class="section-number-3">3.3.</span> What does clang provide?</h3>
+<div id="outline-container-orgf9b46fd" class="outline-3">
+<h3 id="orgf9b46fd"><span class="section-number-3">3.3.</span> What does clang provide?</h3>
 <div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li><a href="https://clang.llvm.org/docs/Tooling.html">https://clang.llvm.org/docs/Tooling.html</a></li>
@@ -2331,8 +2331,8 @@ running the pass from somewhere else moves the file, thats faithful to the spec 
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbe79eff" class="outline-3">
-<h3 id="orgbe79eff"><span class="section-number-3">3.4.</span> Pipeline</h3>
+<div id="outline-container-orgcd37aa0" class="outline-3">
+<h3 id="orgcd37aa0"><span class="section-number-3">3.4.</span> Pipeline</h3>
 <div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li><a href="https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/Token.h">https://github.com/llvm/llvm-project/blob/main/clang/include/clang/Lex/Token.h</a></li>
@@ -2369,8 +2369,8 @@ running the pass from somewhere else moves the file, thats faithful to the spec 
 </div>
 </div>
 </div>
-<div id="outline-container-orgd8df8b1" class="outline-2">
-<h2 id="orgd8df8b1"><span class="section-number-2">4.</span> Thank You for your time</h2>
+<div id="outline-container-orga999805" class="outline-2">
+<h2 id="orga999805"><span class="section-number-2">4.</span> Thank You for your time</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 (Only use this to grade me. The sources are attached, you can use the <code>** Sources:</code> section freely, just not the <code>** General Notes:</code> sections)
@@ -2382,7 +2382,7 @@ running the pass from somewhere else moves the file, thats faithful to the spec 
 <div id="postamble" class="status">
 <p class="date">Date: 2026-07-20 Mon 00:00</p>
 <p class="author">Author: Simon El Hadidi</p>
-<p class="date">Created: 2026-08-18 Tue 13:19</p>
+<p class="date">Created: 2026-08-18 Tue 13:45</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

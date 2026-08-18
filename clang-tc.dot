@@ -1,0 +1,20 @@
+  digraph G {
+      source -> driver;
+      subgraph cluster_clang_c {
+          label = "Clang Toolchain";
+          driver -> lexer_pp;
+          subgraph cluster_clang_cfe {
+              label = "Clang frontend";
+              lexer_pp -> synana -> semana -> code_gen;
+              {rank=same; lexer_pp; synana; semana; code_gen};
+          }
+          subgraph cluster_llvm {
+              label = "LLVM backend";
+              assembly -> backend [dir="back"];
+              backend -> pass_pl [dir="back"];
+              {rank=same; pass_pl; backend; assembly;};
+          }
+          code_gen -> pass_pl;
+          assembly -> linking;
+      }
+  }
